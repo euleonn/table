@@ -1,0 +1,453 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                        best da hood streamable script with most features and has 0 fps drops and has gotten over 10 stars one of the users even had 3 stars
+
+                        best da hood streamable for closet cheating
+
+                        everything is toggleable and can be edited
+
+                        works on any da hood game / related game ( hood customs, untitled hood, da hood modded, da hood, da downhill, da uphill, Dah hood, duh hood, dap hood, etc )
+
+
+			features (the most features ever inside of 1 silent aim script)	
+
+
+                        best custom resolver
+                        frame skip
+                        gunfov 
+                        most features ever inside of one da hood script
+			16 body parts
+                        triggerbot
+                        trash talk
+                        custom anti aim viewer
+                        custom textures
+                        memory spoofer and recv spoofer ( spoofs graphs so it doesnt look like you injected )
+                        fastest and most stable macro
+                        gunsorting 
+			keybind for animations
+                        noclip macro
+                        auto 360
+                        fake spike
+                        auto reload
+                        auto mute boombox
+                        auto low gfx
+			auto remove seats
+                        wall check knocked check grabbed check crew check
+			anti ground shots
+                        XYZ shake and XYZ airshot shake
+                        aimassist with easing styles, mouse mode, keyboard mode, hold mode, over 15 features just for aimassist
+                        panic mode that will turn everything off
+                        crash command that will crash u in a legit way mid pc-checks
+                        auto kick if a mod joins
+                        chat commands to change or toggle features
+			
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+script:
+
+
+getgenv().Euleon = {
+    ['Options'] = {
+        Version = 1.0, -- [ use this to go back to previous versions ( trying to go to a beta version wont work and will instantly blacklist you if you dont have the beta role ) ]
+        Key = 'Key_Here', -- [ put key here ]
+        Intro = false, -- [ shows an intro when injected ]
+        Internal = false, -- [ shows a rconsole you can change chat commands and other things on ]
+        AutoGetUp = true, -- [ picks you up automatically if u cant get up ]
+        AntiError = false, -- [ removes / prevents any errors inside of the console ]
+        BypassData = false, -- [ bypass cheat detections like adonis and most other anticheats ]
+        AutoLowGfx = false, -- [ enables low gfx on inject ]
+        MuteBoomBox = true, -- [ disables boomboxes on inject ]
+        RemoveSeats = true, -- [ removes seats on inject ]
+        GetInformation = true, -- [ shows a notification on how long it took you to inject and how many times youve injected the script (only for euleon BUYERS) ]
+        Notifications = true -- [ notifications for the features listed ]
+            ['PanicMode'] = true,
+            ['FakeSpike'] = true,
+            ['Desync'] = true, 
+            ['Esp'] = true,
+        }
+    },
+    ['PanicMode'] = {
+        Enabled = true, -- [ enable the keybind for panicmode ]
+        KeyBind = 'P' -- [ the keybind to enable panicmode ]
+    },
+    ['F9Cleaner'] = {
+        Enabled = true, -- [ to enable and disable the keybind for f9cleaner ]
+        KeyBind = 'N' -- [ the keybind to enable and disable f9 cleaner ]
+    },
+    ['FakeSpike'] = {
+        Enabled = true, -- [ enable or disable the keybind for fakespike ]
+        KeyBind = 'J', -- [ The Key That Enables / Disables The FakeSpike
+        Power = 500, -- [ How Much Ping It Goes Up To
+        ToggleMode = true, -- [ You Toggle The Spike Instead
+        Delay = 4, -- [ How Much Delay Its Untill The Normal Ping Turns Back
+    },
+    ['ModDetection'] = {
+        Enabled = true, -- [ Enables / Disable Mod Detection
+        Delay = 3, -- [ Makes It More Legit For Kick Method
+        Rank = 200, -- [ Detects If The Users Group Rank Is Higher Then The Number
+        Method = Notification, -- [
+    },
+    ['Silent'] = {
+        Enabled = true, -- [ Enable / Disable Silent Aim
+        Enable_Keybind = true, -- [ Use The KeyBind To Enable / Disable The Silent Aim
+        KeyBind = 'B', -- [ The Key That Enables / Disables The Silent Aim
+        LegitMode = false, -- [ You Wont Make You Curve That Much. You Need To Predict Atleast For It To Work
+        BlatantMode = true, -- [ This Will Make You Hit More But It Will Effect The Resolver Detection. It Will Still Resolve But The More Advanced Will Probably Not.
+        Notifications = true -- [ shows a notification when silent is disabled / enabled ]
+        
+        ForceLock = false, -- [ turn this true if you want to use a 'target' mode instead of fov ]
+        ForceLock_CamlockTarget = true, -- [ Uses Camlock Target Instead Of Silent Aim
+        ForceKeyBind = 'H', -- [ The Key That Gets The Target
+        PredictMovement = true, -- [ Predicts Target Position And MoveMent
+        Prediction = 0.11, -- [ How Much Power It Predicts The Target
+        Part = HumanoidRootPart, -- [ What Part It Targerts
+        UseAirPart = false, -- [ When Target Is In The Air Its Gonna Force To Shoot On Air Part
+        AirPart = LowerTorso, -- [ The Parts It Targets On When Player Is In The Air
+        ClosestPart = true, -- [ Automatically Gets The Closest Part Of The Target And Uses That Position
+        ClosestPoint = true, -- [ Automatically Gets The Closest Point Of The Target Part And Uses That Position
+        ClosestPointScale = 100, -- [ How Far It Reaches Out (Basically Multi Point). In Percent
+        UseWhitelistedParts = false, -- [ Makes So You Only Get Custom Parts
+        WhitelistedPart = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'},
+        AntiAimViewer = true, -- [ Bypasses The Mouse Position For The Server
+        HitChance = 100, -- [ The Chance You Will Hit The Target
+        AirHitChance = 100, -- [ The Chance You Will Hit The Target In The Air
+        
+        Humanize = false, -- [ makes it so silent doesnt hit the same spot / position to look more legit from the enemies pov ]
+        HumanizeValue = 5, -- [ Makes So How Much Power It Changes
+        
+        TriggerBot = true, -- [ Shoots Automatically When You Have An Target Locked
+        TriggerBot_HoldMode = true, -- [ Enables While Only Holding The Key
+        TriggerBot_Delay = 100, -- [ Delays The Click (Milliseconds)
+        TriggerBotMouseKey = MouseButton3, -- [ Mouse Key To Enable / Disable TriggerBot.
+        TriggerBot_HotKey = false, -- [ Will Use KeyBoard Keys Instead Of Mouse Keys
+        TriggerBotKey = Q, -- [ What KeyBoard Key
+        
+        AntiGroundShots = true, -- [ Makes So You Dont Shoot The Ground/Floor
+        AntiGroundValue = 0.3, -- [ How Much Power It Uses For The Silent
+        AntiGroundActivation = -20, -- [ The Value Its Gonna Start Activating
+
+        Custom_AntiAimViewerPoint = {
+            Enabled = false, -- [ Enable / Disable Custom Anti AimViewer
+            RemoteEvent = (function(Pos) -- [ This Is Only For Games That Arent Supported With The Current Anti Aim Viewer
+                local MainEvent = game:GetService('ReplicatedStorage').MainEvent -- [ The MainEvent Path
+                local Args = {
+                    [1] = 'UpdateMousePos', -- [ The String
+                    [2] = Pos -- [ The Mouse Position
+                }
+                return Args, MainEvent -- [ Returns Args And MainEvent 
+                -- [ Use This Script To Get The MainEvent And The Args
+                -- [ loadstring(game:HttpGet('https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua'))()
+            end)
+        },
+        ['AutoPrediction'] = {
+            Enabled = true, -- [ 
+            AutoPrediction = false, -- [ determines if you use auto pred or not, if false then it uses whatever prediction you have set in your camlock / silent prediction ]
+            RefreshRate = 0.2, -- [ the rate it detects your ping (set to 0.01 for the fastest and most accurate )
+            p190_200 = 0.1813, 
+            p180_190 = 0.1733, 
+            p170_180 = 0.1693, 
+            p160_170 = 0.1663, 
+            p150_160 = 0.1574, 
+            p140_150 = 0.1555, 
+            p130_140 = 0.15, 
+            p120_130 = 0.1411, 
+            p110_120 = 0.1344, 
+            p100_110 = 0.1315, 
+            p90_100 = 0.13, 
+            p80_90 = 0.1295, 
+            p70_80 = 0.129, 
+            p60_70 = 0.125, 
+            p50_60 = 0.121, 
+            p40_50 = 0.114, 
+            p30_40 = 0.11, 
+            p20_30 = 0.1, 
+            p10_20 = 0.05, 
+        },
+        ['Fov'] = {
+            Visible = false, -- [ If The Circle Is Showing Or Not
+            Method' = 'Mouse', -- [ What Type Of Position The Fov Is Gonna Be (Mouse, Screen)
+            Filled = false, -- [ If The Circle Is Filled
+            Transparency = 1, -- [ The Circle Transparency
+            Color = Color3.fromRGB(200, 200, 200), -- [ Circle Color
+            Offset = Vector2.new(0, 0)), -- [ Circle Position + The Offset
+            StickyFov = false, -- [ Puts The Circle On Target Position
+            Radius = 10 -- [ How Big The Circle Is
+        },
+        ['GunFov'] = {
+            Enabled = true, -- [ Enable / Disable GunFov
+            ['Options'] = {
+                Fov = true, 
+                Range = true, 
+                Prediction = false, 
+                HitChance = true, 
+                AirHitChance = true, 
+                Smoothness = false, 
+                AirSmoothness = true
+            },
+            ['Dynamic'] = {
+                Enabled = true, -- [ Will Smoothly Changes The Method
+                Time = 0.5, -- [ How Much Time Its Gonna Take To Complete The Motion
+                EasingStyle = 'Linear', -- [ What Smoothning Method For Method Control Motion 
+                EasingDirection = 'Out' -- [ What Smoothning Method For Method Control Direction
+            },
+            Far_Activation = math.huge, -- [ keep this at math.huge or at 1/0 which is inf studs
+            Medium_Activation = 30, -- [ activates at 30 studs
+            Close_Activation = 15, -- [ activates at 15 studs
+            
+            ['Revolver'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['Double-Barrel SG'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['Shotgun'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['TacticalShotgun'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['SMG'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['Silencer'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['Rifle'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['AR'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            },
+            ['AK47'] = {
+                ['Fov'] = 19.5,     ['Prediction'] = 0.135,     ['HitChance'] = 100,      ['AirHitChance'] = 100,      ['Smoothness'] = 0.043,     ['AirSmoothness'] = 0.055,
+                ['CloseFov'] = 10,  ['ClosePrediction'] = 0.121,['CloseHitChance'] = 100, ['CloseAirHitChance'] = 100, ['CloseSmoothness'] = 0.06, ['CloseAirSmoothness'] = 0.075,
+                ['MedFov'] = 6,     ['MedPrediction'] = 0.124,  ['MedHitChance'] = 100,   ['MedAirHitChance'] = 100,   ['MedSmoothness'] = 0.04,   ['MedAirSmoothness'] = 0.065,
+                ['FarFov'] = 4,     ['FarPrediction'] = 0.127,  ['FarHitChance'] = 100,   ['FarAirHitChance'] = 100,   ['FarSmoothness'] = 0.03,   ['FarAirSmoothness'] = 0.045,
+            }
+        }
+    },
+    ['Camlock'] = {
+        Enabled = true, -- [ Enable / Disable Camlock
+        KeyBind = 'E', -- [ The Key To Lock Onto A Player
+        HoldMode = false, -- [ Enables While Only Holding The Key
+        Method = 'Camera', -- [ Wich Thing It Uses For Camlock (Mouse, Camera)
+        Notifications = true -- [ enable / disable camlock target notifications]
+
+        PredictMovement = true, -- [ Predicts Target Position And MoveMent
+        Prediction = 0.136645, -- [ How Much Power It Predicts The Target
+        Part = 'HumanoidRootPart', -- [ The Part That Aim Assist Locks On
+        ClosestPart = true, -- [ Automatically Gets The Closest Part Of The Target And Uses That Position
+        RandomPart = false, -- [ Randomizes An Part Of The Target And Uses That Position. Will OverWrite ClosestPart
+        EnableChance = false, -- [ Makes So Theres A Chance The Camlock Will Enabled
+        Chance = 30, -- [ The Chance The Camlock Will Be Enabled
+        UseCircleRadius = true, -- [ Only Locks On To People Inside The Circle
+        DisableOutSideCircle = false, -- [ If Target Is OutSide The Circle It Disables The Aim Assist
+        
+        FirstPerson = true, -- [ Only Enables When Your On FirstPerson
+        ThirdPerson = true, -- [ Only Enables When Your On ThirdPerson
+        
+        UseSmoothness = true, -- [ Enable / Disable Smoothness
+        Smoothness_X = 0.042, -- [ How Smooth The Aim Assist Is On X
+        Smoothness_Y = 0.045, -- [ How Smooth The Aim Assist Is On Y 
+
+        AirSmoothness = true, -- [ Uses AirSmoothness When The Target Is In The Air
+        AirSmoothness_X = 0.055, -- [ How Smooth The Aim Assist Is On X In Target Air
+        AirSmoothness_Y = 0.055, -- [ How Smooth The Aim Assist Is On Y In Target Air
+        
+        ['Advanced'] = {
+            WallsV2 = false, -- [ Loop Checks If Theres A Wall Infront Of The Target
+            TickBased = false, -- [ Executes On Based Tick Changes
+            Stutter = 1, -- [ Checks Last Tick If Its High Or Not. If Its High It Disables For Security Reasons
+            EasingStyle = 'Linear', -- [ What Smoothning Method For Camlock To Control Motion 
+            EasingDirection = 'Out' -- [ What Smoothning Method For Camlock To Control Direction
+        },
+        ['FrameSkip'] = {
+            Enabled = true, -- [ Flicks To Targets Part
+            Power = 0.95, -- [ How Much Power It Flicks To The Target
+            UsePrediction = false, -- [ Adds Prediction For Flicking
+            TargetPart = {Enabled = true, Part = Head}, -- [ Flicks To The Part
+            KeyBind = 'Q' -- [ The Keybind To Activate The Flick
+        },
+        ['Shake'] = {
+            Enabled = true, -- [ Enable / Disable Shake
+            X = 20, -- [ How Much It Shakes On X
+            Y = 15, -- [ How Much It Shakes On Y
+            Z = 20, -- [ How Much It Shakes On Z
+            AirShot = true, -- [ Uses Shake Percentage When The Target Is In The Air
+            Airshot_X = 5, -- [ not coded yet ]
+            Airshot_Y = 5,
+            Airshot_Z = 5,
+        },
+        ['Fov'] = {
+            Visible = false, -- [ If The Circle Is Showing Or Not
+            Filled = true, -- [ If The Circle Is Filled
+            Transparency = 0.5, -- [ Circles Transparency
+            Color = Color3.fromRGB(0, 0, 0), -- [ Circle Color
+            Radius = 70 -- [ How Big The Circle Is
+        }
+    },
+    ['UniversalCheck'] = {
+        Invisible = true, -- [ checks if target is invisible (say a mod viewing you while invisible) ]
+        Forcefield = false, -- [ checks if target has a forcefield around them / just spawned in ]
+        TargetRespawnCheck = true, -- [ disables camlock when target is dead and about to respawn ]
+        PlayerDeathCheck = true, -- [ disables camlock when the player dies ]
+        GunOut = false, -- [ camlock only targets a player when a gun / tool is equipped ]
+        
+        Walls = true, -- [ Checks If There Is Nothing Infront Of The Target
+        WallsV2 = false, -- [ Checks If The Velocity Is Predicting Into An Wall
+        Friend = true, -- [ Checks If Target Is Your Friend
+        Team = false, -- [ Checks If Player Is In the Same Team
+        
+        CrewCheck = true, -- [ Checks If Target Is In Your Crew
+        KoCheck = true, -- [ Checks If Target Is Grabbed Or Knocked
+        ReloadCheck = false, -- [ Checks If You Are Realoding
+        NoAmmoCheck = false, -- [ Checks If Youre Gun Has 0 Ammo
+        
+        ['Advanced'] = {
+            TargetBots = false, -- [ Makes The Silent And Camlock Target The Bot. RISKY!
+            BotPath = 'NPC' -- [ Gets The Folder Path Where The Bots Are And Uses It. In The Current Workspace Folder
+        }
+    },
+    ['ChatCommands'] = {
+        Enabled = true, 
+
+        Silent_Enabled = '$senable', -- [ The Command To Enable / Disable Silent (With false/true)
+        Silent_Prediction = '$spred', -- [ The Command To Change Silent Prediction (With Numbers)
+        Silent_Fov_Size = '$sfov', -- [ The Command To Change Silent Fov (With Numbers)
+        Silent_Fov_Show = '$sshow', -- [ The Command To Change Silent (With false/true)
+        Silent_HitChance = '$schance', -- [ The Command To Change Silent HitChance (With Numbers)
+        Silent_LegitMode = '$slegit', -- [ The Command To Change Silent LegitMode (With false/true)
+        Silent_BlatantMode = '$sblatant', -- [ The Command To Change Silent BlatantMode (With false/true)
+
+        -- [ Camlock ChatCommands
+        Camlock_Enabled = '$aenabled', -- [ The Command To Enable / Disable Camlock (With false/true)
+        Camlock_Prediction = '$apred', -- [ The Command To Change Camlock Prediction (With Numbers)
+        Camlock_Fov_Size = '$afov', -- [ The Command To Change Camlock Fov (With Numbers)
+        Camlock_Fov_Show = '$ashow', -- [ The Command To Change Camlock (With false/true)
+        Camlock_SmoothX = '$smoothx', -- [ The Command To Change Camlock SmoothNess X Value (With Numbers)
+        Camlock_SmoothY = '$smoothy', -- [ The Command To Change Camlock SmoothNess Y Value (With Numbers)
+        Camlock_Shake = '$ashake', -- [ The Command To Change Camlock Shake Value (With Numbers)
+        
+        -- [ Misc ChatCommands
+        RejoinServer = 'rejserv', -- [ The Command To Rejoin The Server You Are In
+        RandomServer = 'rejoin.', -- [ The Command To Rejoin An Random Server
+        
+        SaveConfig = 'savecon', -- [ Creates An Txt That Saves The Table. (Example Savecon ConfigName)
+        LoadConfig = 'loadcon', -- [ Loads An New Table. (Example loadcon ConfigName)
+
+        CrashMode = '. ', -- [ crash roblox command ]
+        CrashMethod = 'Freeze' -- [ method to crash (freeze, shutdown) ]
+    },
+    ['GunSorting'] = {
+        Enabled = true, -- [ enable or disable the GunSorting keybind
+        KeyBind = 'L', -- [ always uppercase letters ]
+        UseFood = true, -- [ Sorts Also Food
+        ['Slots'] = { -- [ max is 10 slots ]
+            '[Double-Barrel SG]', -- [ The First Slot Item
+            '[Revolver]', -- [ The Second Slot Item
+            '[TacticalShotgun]', -- [ The Third Slot Item
+            '[Shotgun]', -- [ The Fourth Slot Item
+            '[Katana]' -- [ The Fifth Slot Item
+        },
+    },
+    ['MemorySpoofer'] = {
+        Enabled = true, -- [ Edits Memory Numbers On Roblox Gui
+        Delay = 1, -- [ The RefreshRate On Random Numbers
+        Maximum = 980, -- [ The Maximum It Can Generate
+        Lowest = 965 -- [ The Lowest It Can Generate 
+    },
+    ['Macro'] = {
+        -- // normal macro
+        Speed_Enabled = true, -- [ Enable / Disable Macro 
+        Speed_Delay = 1, -- [ The Delay For The Macro (The Higher The Slower)
+        Speed_KeyBind = 'T', -- [ Key To Macro
+        Speed_HoldMode = true, -- [ Enables While Only Holding The KeyBind
+        Speed_MacroAbuse = true, -- [ This Will Bypass Anti Gun Macro
+        Speed_ThirdPersonV2 = false, -- [ This Makes The Macro Much Faster. But Its Only Good For People That Has Under 60-
+        Speed_Method = 'FirstPerson', -- [ thirdperson, firstperson, shiftlock ]
+        
+        Lay_Emote = true, -- [ Enable / Disable Lay_Emote Key
+        Lay_KeyBind = 'G', -- [ Key To Execute Lay
+        Greet_Emote = true, -- [ Enable / Disable Greet_Emote Key
+        Greet_Keybind = 'Y', -- [ Key To Execute Greet
+        
+        Noclip_Macro = true, -- [ Enable / Disable Noclip Key
+        Noclip_HoldMode = true, -- [ Enables While Only Holding The Key
+        Noclip_KeyBind = 'C', -- [ Key To Enable Macro
+        
+        -- //
+        RotationMode = true, -- [ Enable / Disable Rotation Key
+        Degrees = 360, -- [ How Much You Turn
+        RotationSpeed = 5, -- [ How Fast You Turn
+        Rotation_KeyBind = 'V' -- [ Key To Enable Macro
+    },
+    ['Desync'] = {
+        Enabled = true, -- [ Enable / Disable Desync
+        HealthDeActivation = 7, -- [ Disables The Desync When Your Health Is That Low
+        UseDesyncKey = true, -- [ Use The KeyBind To Enable / Disable The Desync Desync Key
+        DesyncKey = 'X', -- [ Key To Enable / Disable Desync
+        HoldMode = false, -- [ Enables While Only Holding The Key
+        
+        Visualize = {['Enabled'] = true, ['Radius'] = (30), ['Color'] = (Color3.fromRGB(255, 255, 255))}, -- [ Shows An Dot Where The Velocity Is
+        Method = 'Vel_StandBy', -- [ Vel_Multi, Custom_Vel, Vel_StandBy, Vel_Under, Vel_Zero) 2 Diffrent Options To Change Server Position (Freeze_Pos, Slow_Data)
+        Power = 5, -- [ How Much Velocity The Method Is Using. Vel_StandBy, Custom_Vel, Vel_Zero And Server Position Changer Does Not Need This
+        
+        ['Custom'] = {
+            Vel_X = 50, -- [ How Much Power Is On X
+            Vel_Y = 50, -- [ How Much Power Is On Y
+            Vel_Z = 50 -- [ How Much Power Is On Z
+        }
+    },
+    ['Esp'] = {
+        Enabled = false, -- [ Enable / Disable Esp
+        UseEspKeyBind = true, -- [ Enable / Disable EspKey
+        EspKey = 'Z', -- [ Key To Enable / Disable Esp
+        HoldMode = false, -- [ Enables While Only Holding The Key
+        
+        TextSize = 16, -- [ How Big The Text Is
+        
+        Name = {['Enabled'] = true,
+        Cheater = {Enabled = true,
+        Box = {Enabled = true,
+        
+        HealthBar = {['Enabled'] = true,
+        HealthText = {['Enabled'] = true,
+        
+        ArmorBar = {['Enabled'] = true,
+        ArmorText = {['Enabled'] = true,
+        
+        Distance = {['Enabled'] = true,
+        Tool = {['Enabled'] = true,
+        Flags = {['Enabled'] = false,
+        Tracer = {['Enabled'] = false,
+        
+        CrewColor = {['Enabled'] = true,
+        TargetColor = {['Enabled'] = false,
+}
